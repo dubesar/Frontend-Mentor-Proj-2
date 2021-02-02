@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-image: url("images/bg-pattern-top-desktop.svg");
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .top {
+        display: flex;
+      }
+      .top-right {
+        display: flex;
+        flex-direction: column;
+        padding: 70px;
+        margin-top: 30px;
+        margin-left: -150px;
+      }
+      .rate {
+        background-color: hsl(300, 24%, 96%);
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        margin: 15px;
+      }
+      .fi {
+        margin-left:50px;
+        width: 400px;
+      }
+      .se {
+        margin-left: 100px;
+        width: 400px;
+      }
+      .star-comment {
+        margin-left: 35px;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        color: hsl(300, 43%, 22%);
+        font-size: 15px;
+      }
+      .ze {
+        width: 350px;
+      }
+      .top-head{
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        color: hsl(300, 43%, 22%);
+        font-size: 50px;
+        margin: 100px;
+        width: 40vw;
+        margin-left: 15vw;
+      }
+      .top-support {
+        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        color: hsl(300, 43%, 22%);
+        font-size: 18px;
+        margin-left: 15vw;
+        margin-top: -8vh;
+        width: 30vw;
+      }
+      .bottom {
+        display: flex;
+      }
+      .bottom-fi,.bottom-si,.bottom-ti {
+        background: hsl(300, 43%, 22%);
+        padding: 10px;
+        width: 40vw;
+        margin: 30px;
+        margin-top: 50px;
+        border-radius: 20px;
+      }
+      .bottom-fi {
+        transform: translateY(-30px);
+      }
+      .bottom-ti {
+        transform: translateY(30px);
+      }
+      .fir {
+        display: flex;
+        padding: 35px;
+      }
+      img {
+        border-radius: 50px;
+      }
+      .tit {
+        margin-left: 25px;
+      }
+      .name {
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        font-size: 18px;
+      }
+      .title-name {
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        color: hsl(333, 80%, 67%);
+        font-size: 14px;
+      }
+      .para {
+        font-size: 14px;
+        letter-spacing: 0.1ch;
+        font-weight: 500;
+        margin-left: 30px;
+        margin-right: 25px;
+        line-height: 1.9ch;
+        margin-top: -15px;
+      }
+      @media only screen and (max-width: 600px){
+        body {
+          overflow-x: hidden;
+        }
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          margin-left: -30px;
+        }
+        .bottom-fi,.bottom-si,.bottom-ti {
+          width: 90vw;
+          margin-bottom: -40px;
+        }
+        .top {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .top-left {
+          width: 20vw;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .ze {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0px;
+          width: 80vw;
+        }
+        .fi {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0px;
+          width: 80vw;
+        }
+        .se {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0px;
+          width: 80vw;
+        }
+        .top-right {
+          transform: translate(80px);
+        }
+        .top-head {
+          font-size: 24px;
+          margin-left: 30px;
+        }
+        .top-support {
+          font-size: 15px;
+          width: 70vw;
+          margin-left: -30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "top">
+      <div class = "top-left">
+        <div class = "top-head">
+          10,000+ of our <br> users love our <br> products.
+        </div>
+        <div class = "top-support">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </div>
+      </div>
+      <div class = top-right>
+        <div class = "rate ze">
+          <div class = "stars">
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+          </div>
+          <div class = "star-comment">
+            Rated 5 Stars in Reviews
+          </div>
+        </div>
+        <div class = "rate fi">
+          <div class = "stars">
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+          </div>
+          <div class = "star-comment">
+            Rated 5 Stars in Report Guru
+          </div>
+        </div>
+        <div class = "rate se">
+          <div class = "stars">
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+            <span><img src="images/icon-star.svg" /></span>
+          </div>
+          <div class = "star-comment">
+            Rated 5 Stars in Best Tech
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class = "bottom">
+      <div class = "bottom-fi">
+        <div class = "fir">
+          <div>
+            <img src = "images/image-colton.jpg" />
+          </div>
+          <div class = "tit">
+            <p class = "name">Colton Smith</p><span class = "title-name">Verified Buyer</span>
+          </div>
+        </div>
+        <p class = "name para">"We needed the same printed design as the one we had ordered a week prior.
+        Not only did they find the original order, but we also received it in time.
+        Excellent!"
+        </p>
+      </div>
+      <div class = "bottom-si">
+        <div class = "fir">
+          <div>
+            <img src = "images/image-irene.jpg" />
+          </div>
+          <div class = "tit">
+            <p class = "name">Irene Roberts</p><span class = "title-name">Verified Buyer</span>
+          </div>
+        </div>
+        <p class = "name para">"Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </p>
+      </div>
+      <div class = "bottom-ti">
+        <div class = "fir">
+          <div>
+            <img src = "images/image-anne.jpg" />
+          </div>
+          <div class = "tit">
+            <p class = "name">Anne Wallace</p><span class = "title-name">Verified Buyer</span>
+          </div>
+        </div>
+        <p class = "name para">"Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
